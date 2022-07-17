@@ -157,10 +157,10 @@ function render(resumeObject) {
             resumeObject.projectsBool = true;
             _.each(resumeObject.projects, function(e){
                 if (e.type == "professional"){
-                    e.iconType = "fa-briefcase";
+                    e.iconType = "fa-suitcase";
                 }
                 else if ( e.type == "coursework" ){
-                    e.iconType = "fa-university";
+                    e.iconType = "fa-graduation-cap ";
                 }
                 else if ( e.type == "personal" ){
                     e.iconType = "fa-laptop"

@@ -43,21 +43,6 @@
             <p>{{{basics.summary}}}</p>
           </div>
           {{/basics.summary}}
-          {{#projectsBool}}
-          <!-- PROJECTS -->
-          <div class="box">
-            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
-            <ul class="list-group">
-              {{#projects}}
-              <li class="list-group-item">
-                <i class="fa {{iconType}}" aria-hidden="true"></i> <span style="font-weight:bold">{{name}}</span>:
-                <br>
-                {{description}}
-              </li>
-              {{/projects}}
-            </ul>
-          </div>
-          {{/projectsBool}}
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
           <div class="box">
@@ -107,6 +92,22 @@
             {{/work}}
           </div>
           {{/workBool}}
+          {{#projectsBool}}
+          <!-- PROJECTS -->
+          <div class="box">
+            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+            <ul class="list-group">
+              {{#projects}}
+              <li class="list-group-item">
+                <div style="display: none;">{{keywords}}</div>
+                <i class="fa {{iconType}}" aria-hidden="true"></i> <span style="font-weight:bold">{{name}}</span>:
+                <br>
+                {{description}}
+              </li>
+              {{/projects}}
+            </ul>
+          </div>
+          {{/projectsBool}}
           {{#awardsBool}}
           <!-- AWARDS -->
           <div class="box">
