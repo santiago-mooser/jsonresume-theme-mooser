@@ -2,13 +2,13 @@
 
 A theme for the [JSONResume](https://github.com/jsonresume/resume-schema) schema, that relies on Bootstrap and FontAwesome, added with some personal flair.
 
-**NOTE**: This supports schema 1.0.0. Some things may be missing or broken if your resume.json is using the older schema.
+**NOTE**: This theme does not follow the standard jsonresume schema. It is a custom schema that I have created for my own resume. If you want to use this theme, you will need to modify the schema to match your own resume.
 
 ## Usage
 
 To first get started with this JSONResume theme, you'll need to have the JSONResume CLI installed. If you haven't already install it with `npm install -g resume-cli`. If this doesn't work, try `sudo npm install -g resume-cli`.
 
-After this, you can get your resume.json ready by typing `resume init`. After hitting enter, your resume will be initialized and you can edit it and fill in the neccessary fields. Check out [the official resume-schema repository](https://github.com/jsonresume/resume-schema) for more information on filling these fields.
+After this, you can get your resume.json ready by typing `resume init`. After hitting enter, your resume will be initialized and you can edit it and fill in the neccessary fields. Check out [the official resume-schema repository](https://github.com/jsonresume/resume-schema) for more information on filling these fields. Again, please note that this theme does not follow the standard schema, so you will need to modify the json file to match this theme.
 
 When you are finished with your resume, you may test it by yet again opening the command line and typing `resume serve --theme mooser` to see how it looks with this theme. You can replace the word `mooser` with other theme names too.
 

@@ -17,37 +17,41 @@ body{
 blockquote {
   font-size: 1.2em;
 }
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
-#content{
-display: flex;
-flex-wrap: wrap;
-}
-#left-column{
-padding-left: 3%;
-padding-right: 1%;
-max-width: 100%;
-min-width: 300;
-}
-#right-column{
-padding-left: 1%;
-padding-right: 3%;
-max-width: 100%;
-min-width: 30%;
-}
 .container{
   margin-top: 80px;
   margin-bottom: 15px;
   background: #fff;
-  max-width: 80%;
+  max-width: 100%;
   min-width: 15%;
   border-radius: 25px;
   min-width: auto;
   margin-right: auto;
 }
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#content{
+  display: flex;
+  flex-wrap: wrap;
+}
+#left-column {
+  padding-left: 3%;
+  padding-right: 1%;
+  max-width: 100%;
+  min-width: 300;
+}
+#right-column {
+  padding-left: 1%;
+  padding-right: 3%;
+  max-width: 100%;
+  min-width: 30%;
+}
+
 #references {
+  word-wrap: break-word;
+}
+#reference {
   text-align: left;
 }
 #photo-header{
@@ -95,6 +99,22 @@ min-width: 30%;
   content: '';
   display: block;
 }
+#textbox {
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.alignleft {
+width:50%;
+text-align:left;
+word-wrap: break-word;
+}
+.alignright {
+width:50%;
+text-align:right;
+word-wrap: break-word;
+}
+
 
 #content{
   display: flex;
@@ -111,12 +131,14 @@ min-width: 30%;
 .box{
   padding-bottom: 10px;
   text-align: justify;
+  word-wrap: break-word;
 }
 .box h2{
   color: #227c74;
   font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 20px 20px 20px 0;
 }
 
 #awards,
@@ -174,9 +196,8 @@ margin-bottom: 10px;
 }
 .job .details {
   padding: 10px;
-  margin-bottom: 10px;
   background: #eee;
-  border-radius: 15px 15px 0 0 ;
+  border-radius: 15px 15px 0 0;
 }
 .job .where{
   font-size: 1.2em;
@@ -189,6 +210,13 @@ margin-bottom: 10px;
   font-size: 1.2em;
   font-weight: bold;
 }
+.job .address{
+  word-break: break-all;
+  text-align: left;
+  float: left;
+  margin-bottom: 5px;
+}
+
 .job .description{
   line-height: 1.5em;
 }
@@ -199,6 +227,10 @@ margin-bottom: 10px;
 }
 .job .job-details {
   width: 100%;
+  border: 1px solid #eee;
+  padding-top: 10px;
+  border-width: 0px 1px 1px 1px;
+  border-radius: 0 0 15px 15px;
 
 }
 .publication {
@@ -275,6 +307,10 @@ margin-bottom: 10px;
   font-size: .75em;
   position: absolute;
   margin: 1px 10px;
+}
+
+#languages{
+  min-width: max-content
 }
 
 #language-skills .skill{
