@@ -89,7 +89,10 @@ function render(resumeObject) {
                 p.iconClass = "fab fa-gitlab";
                 break;
             case "keybase":
-                p.iconClass = "fas fa-key";
+                p.iconClass = "fab fa-keybase";
+                break;
+            case "cv":
+                p.iconClass = "fas fa-file-invoice";
                 break;
             default:
                 // try to automatically select the icon based on the name
