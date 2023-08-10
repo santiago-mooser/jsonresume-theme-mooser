@@ -26,6 +26,8 @@ blockquote {
   border-radius: 25px;
   min-width: auto;
   margin-right: auto;
+  width: 2100px;
+  height: 2970px;
 }
 .row {
   margin-right: 0;
