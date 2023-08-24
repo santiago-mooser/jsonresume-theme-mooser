@@ -21,8 +21,7 @@ blockquote {
   margin-top: 80px;
   margin-bottom: 15px;
   background: #fff;
-  max-width: 100%;
-  min-width: 15%;
+  width: 100%;
   border-radius: 25px;
   min-width: auto;
   margin-right: auto;
