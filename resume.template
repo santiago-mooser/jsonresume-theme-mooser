@@ -103,8 +103,9 @@
               {{#projects}}
               <li class="list-group-item">
                 <div style="display: none;">{{keywords}}</div>
-                <i class="fa {{iconType}}" aria-hidden="true"></i> <span style="font-weight:bold">{{name}}</span>:
+                <i class="fa {{iconType}}" aria-hidden="true"></i> <span style="font-weight:bold">{{name}}:</span>
                 <br>
+                <a style="{{urlStyle}}" href="{{url}}"><i class='fas fa-external-link-alt'></i></a>
                 {{description}}
               </li>
               {{/projects}}
